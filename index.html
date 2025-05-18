@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rough-144</title>
+</head>
+<style>
+*{
+    text-transform: capitalize;
+    font-family: Palatino linotype, monospace;
+    padding: 0px;
+    cursor: pointer;
+    margin: 0px;
+    user-select: none;
+}
+/*Nav Styling Starts Here */
+nav{
+    cursor: pointer;
+    border: 2px, solid, whitesmoke;
+    box-shadow: 2px 2px 4px rgb(97, 95, 95);
+    height: 50px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav-cont{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin-top: 13px;
+    gap: 228px;
+}
+.nav-items{
+    font-size: 22px;
+}
+/*Nav Styling Ends Here */
+
+
+/*Aside Styling Starts Here */
+aside{
+    border: 2px, solid, whitesmoke;
+    box-shadow: 3px 3px 8px rgb(97, 95, 95);
+    position: fixed;
+    background-color: white;
+    width: 20%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-indent: 20px;
+    list-style: none;
+    top: 56px;
+    left: 1000px;
+}
+.aside-cont{
+    list-style: none;
+}
+.change{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.hidden{
+    display: none;
+}
+main{
+    margin-top: 100px;
+}
+/*Aside Styling Ends Here */
+
+
+/*Main Styling Starts Here */
+.main-txt{
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-shadow: 2px 4px 3px rgb(39, 38, 38);
+}
+.ads{
+    border: 2p, solid, whitesmoke;
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 3px 5px rgb(117, 116, 116);
+    margin: 10px;
+    position: fixed;
+    top: 170px;
+    left: 1100px;
+}
+.box-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    margin-bottom: 5px;
+}
+.box{
+    border: 2px, solid, whitesmoke;
+    box-shadow: 3px 3px 8px rgb(116, 113, 113);
+    width: 200px;
+    border-radius: 15px;
+    line-height: 25px;
+    margin: 20px;
+}
+.boxes-cont{
+    margin-bottom: 100px;
+}
+.offer h2{
+    display: inline;
+    font-family: monospace;
+    color: black;
+    font-size: 30px;
+    text-decoration: underline double black;
+}
+.offer{
+    margin-bottom: 300px;
+    font-style: italic;
+}
+.tech-head{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 100px;
+}
+.id-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-style: italic;
+}
+.ids{
+    border: 2px ,solid, white;
+    box-shadow: 2px 5px 8px rgb(121, 119, 119);
+    width: 250px;
+}
+.ids h3{
+    text-align: center;
+    line-height: 35px;
+}
+main{
+    margin-bottom: 200px;
+}
+/*Main Styling Ends Here */
+
+
+/*Footer Styling Starts Here */
+footer{
+    color: white;
+    font-weight: 500;
+    font-style: italic;
+    font-family: Palatino Linotype;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    border: 2px, solid, black;
+}
+.containers{
+    padding-top: 50px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.last{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+}
+/*Footer Styling Ends Here */
+</style>
+<body>
+    <nav>
+        <ul class="nav-cont" id="nav-cont">
+            <a href="#"><li class="nav-items" id="nav-item-1">Home</li></a>
+            <li class="nav-items" id="nav-item-2">Action</li>
+            <li class="nav-items" id="nav-item-3">Login</li>
+            <li class="nav-items" id="nav-item-4">Premium</li>
+            <li class="nav-items" id="nav-item-5">More</li>
+        </ul>
+    </nav>
+    <aside class="hidden" id="aside">
+        <ul class="aside-cont " id="aside-cont">
+            <li class="aside-items" id="aside-item-1">
+                <h3 style="font-style: italic;">Link To More <a href="#">Teachers</a></h3>
+                <h3 style="font-style: italic;">Apply As a <a href="#">Teacher</a></h3>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <h2 class="main-txt" id="main-txt">We offer you 4 sevices</h2>
+        <div class="ad-cont hidden" id="ad-cont-1">
+            <img id="ad-1" class="ads" src="https://up.yimg.com/ib/th?id=OIP.vtpvjhe9No00uexi0QCIQwHaEK&pid=Api&rs=1&c=1&qlt=95&w=186&h=104" alt="Product On Ad" width="150px" height="150px">
+        </div>
+        <div class="boxes-cont" id="boxex-cont">
+        <div class="box-cont" id="box-cont-1">
+            <div class="box" id="box-1">
+                <h4>Ready To  Marketplace</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, amet.</p>
+            </div>
+            <div class="box" id="box-2">
+                <h4>Its All About CYBERSECURITY</h4>
+                <p>Lorem, ipsum dolor sit amet consecteturaliquam alias laborum quidem?</p>
+            </div>
+        </div>
+            <div class="box-cont" id="box-cont-2">
+
+            
+            <div class="box" id="box-3">
+                <h4>Need More Remote Jobs?</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perspiciatis eum. Nemo, expedita.
+            </div>
+            <div class="box" id="box-4">
+                <h4>Buy some Crypto tokens</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem amet maxime ipsam.</p>
+            </div>
+        </div>
+    </div>
+    <div class="offer" id="offer">
+        <img src="https://up.yimg.com/ib/th?id=OIP.uvcgWh0QWGclQZtoqgsTrAHaG_&pid=Api&rs=1&c=1&qlt=95&w=110&h=104" width="500px" height="500px" alt="Product On Sale">
+        <a href="#"><h2>Its On Offer!!!</h2></a>
+    </div>
+    <div class="teachers" id="teachers">
+        <h3 class="tech-head" id="tech-head">We Provide 4 best teachers for cybersecurity and Full Stack Development:-</h3>
+    <div class="id-cont" id="id-cont-1">
+        <div class="ids" id="id-1">
+            <img src="https://up.yimg.com/ib/th?id=OIP.2Ecc2kJaDoiau98cs8wETgHaE8&pid=Api&rs=1&c=1&qlt=95&w=152&h=101" alt="Teachers pictures" width="250px" height="200px">
+            <h3>Teacher Name: Aliya Nilon</h3>
+            <h3>Graduation: M.Phill</h3>
+            <h3>Expert In: Full Stack Development</h3>
+            <h3>Fees: Rs. 100,000</h3>
+        </div>
+        <div class="ids" id="id-2">
+            <img src="https://up.yimg.com/ib/th?id=OIP.Oewl_MRPuG9b7_lwLfMhawHaFB&pid=Api&rs=1&c=1&qlt=95&w=169&h=114" alt="Teachers pictures" width="250px" height="200px">
+            <h3>Teacher Name: Marry Curie</h3>
+            <h3>Graduation: M.Phill</h3>
+            <h3>Expert In: Full Stack Development</h3>
+            <h3>Fees: Rs. 100,000</h3>
+        </div>
+        <div class="ids" id="id-3">
+            <img src="https://up.yimg.com/ib/th?id=OIP.LHpNX_7WYLR7oalwl5HY1wHaHa&pid=Api&rs=1&c=1&qlt=95&w=114&h=114" alt="Teachers pictures" width="250px" height="200px">
+            <h3>Teacher Name: Julien Alien</h3>
+            <h3>Graduation: M.Phill</h3>
+            <h3>Expert In: Full Stack Development</h3>
+            <h3>Fees: Rs. 100,000</h3>
+        </div>
+        <div class="ids" id="id-4">
+            <img src="https://up.yimg.com/ib/th?id=OIP.7uuSywG8vBjfkaDF-MCktgHaE8&pid=Api&rs=1&c=1&qlt=95&w=145&h=97" alt="Teachers pictures" width="250px" height="200px">
+            <h3>Teacher Name: Bro Jhons</h3>
+            <h3>Graduation: M.Phill</h3>
+            <h3>Expert In: Full Stack Development</h3>
+            <h3>Fees: Rs. 100,000</h3>
+        </div>
+    </div>
+    </div>
+    </main>
+    <footer>
+        <div class="containers" id="container-1">
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+        </div>
+        <div class="containers" id="container-2">
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+        </div>
+        <div class="containers" id="container-3">
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+        </div>
+        <div id="last" class="last">
+        <a href="#"><h4>@Copyright</h4></a>
+        <a href="#"><h4>About Us</h4></a>
+        <a href="#"><h4>Want To Travel With US</h4></a>
+        </div>
+    </footer>
+    <script>
+        let ad = document.getElementById('ad-cont-1')
+document.addEventListener('DOMContentLoaded', function(){
+    setTimeout(()=>{
+        ad.classList.remove('hidden')
+    }, 10000)
+    setTimeout(()=>{
+        ad.classList.add('hidden')
+    }, 20000)
+})
+let set = document.getElementById('nav-item-5')
+set.addEventListener('click', function(){
+    let aside = document.getElementById('aside')
+    aside.classList.toggle('hidden')
+})
+    </script>
+</body>
+</html>
