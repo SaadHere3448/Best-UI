@@ -158,6 +158,8 @@ main{
     margin-bottom: 200px;
 }
 /*Main Styling Ends Here */
+
+
 /*Footer Styling Starts Here */
 footer{
     color: white;
@@ -165,7 +167,6 @@ footer{
     font-style: italic;
     font-family: Palatino Linotype;
     display: flex;
-    flex-wrap:wrap;
     justify-content: space-evenly;
     background-color: black;
     border: 2px, solid, black;
@@ -188,11 +189,31 @@ footer{
         width: 200px;
         height: 200px;
     }
+    .ids{
+        width: 200px;
+        height: 200px;
+    }
+    .ids img{
+        width: 200px;
+        height: 200px;
+    }
     .main-txt{
         font-size: 20px;
     }
     .nav-items{
         font-size: 13px;
+    }
+}
+@media screen and (max-width : 300px){
+    body{
+        line-height: 50px;
+    }
+    .ids img{
+        width: 240px;
+    }
+    .ids{
+        width: 340px;
+        margin-bottom: 300px;
     }
 }
 </style>
