@@ -14,6 +14,9 @@
     margin: 0px;
     user-select: none;
 }
+body{
+    overflow-x: hidden;
+}
 /*Nav Styling Starts Here */
 nav{
     cursor: pointer;
@@ -33,10 +36,11 @@ nav a{
 }
 .nav-cont{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     flex-direction: row;
     margin-top: 13px;
-    gap: 228px;
+    justify-content: space-between;
 }
 .nav-items{
     font-size: 22px;
@@ -91,7 +95,8 @@ main{
     margin: 10px;
     position: fixed;
     top: 170px;
-    left: 1100px;
+
+    right: 0px;
 }
 .box-cont{
     display: flex;
@@ -134,6 +139,7 @@ h4{
 }
 .id-cont{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -164,6 +170,7 @@ footer{
     justify-content: space-evenly;
     background-color: black;
     border: 2px, solid, black;
+    width: 100vw;
 }
 .containers{
     padding-top: 50px;
@@ -177,6 +184,18 @@ footer{
     flex-direction: column;
 }
 /*Footer Styling Ends Here */
+@media screen and (max-width:600px){
+    .offer-img{
+        width: 200px;
+        height: 200px;
+    }
+    .main-txt{
+        font-size: 20px;
+    }
+    .nav-items{
+        font-size: 13px;
+    }
+}
 </style>
 <body>
     <nav>
