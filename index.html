@@ -1,325 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best UI</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clean UI Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-<style>
-*{
-    text-transform: capitalize;
-    font-family: Palatino linotype, monospace;
-    padding: 0px;
-    cursor: pointer;
-    margin: 0px;
-    user-select: none;
+    <style>
+        :root {
+  --primary-color: #5e60ce;
+  --text-color: #333;
+  --bg-color: #fff;
+  --gray: #f8f9fa;
+  --max-width: 1200px;
 }
-body{
-    overflow-x: hidden;
-}
-/*Nav Styling Starts Here */
-nav{
-    cursor: pointer;
-    border: 2px, solid, whitesmoke;
-    box-shadow: 2px 2px 4px rgb(97, 95, 95);
-    height: 50px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 99;
-    background-color: white;
-}
-nav a{
-    text-decoration: none;
-    color: black;
-}
-.nav-cont{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    flex-direction: row;
-    margin-top: 13px;
-    justify-content: space-between;
-}
-.nav-items{
-    font-size: 22px;
-}
-/*Nav Styling Ends Here */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/*Aside Styling Starts Here */
-aside{
-    border: 2px, solid, whitesmoke;
-    box-shadow: 3px 3px 8px rgb(97, 95, 95);
-    position: fixed;
-    background-color: white;
-    width: 20%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    text-indent: 20px;
-    list-style: none;
-    top: 56px;
-    left: 1000px;
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.6;
 }
-.aside-cont{
-    list-style: none;
-}
-.change{
-    margin-top: 15px;
-    margin-left: 15px;
-}
-.hidden{
-    display: none;
-}
-main{
-    margin-top: 100px;
-}
-/*Aside Styling Ends Here */
 
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem 2rem;
+}
 
-/*Main Styling Starts Here */
-.main-txt{
-    font-family: monospace;
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
-    text-shadow: 2px 4px 3px rgb(39, 38, 38);
+header {
+  background: var(--gray);
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
 }
-.ads{
-    border: 2p, solid, whitesmoke;
-    width: 150px;
-    height: 150px;
-    box-shadow: 2px 3px 5px rgb(117, 116, 116);
-    margin: 10px;
-    position: fixed;
-    top: 170px;
 
-    right: 0px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.box-cont{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content:space-evenly;
-    align-items:center;
-    justify-content: center;
-    align-items: center;
-}
-h4{
-    margin-bottom: 5px;
-}
-.box{
-    border: 2px, solid, whitesmoke;
-    box-shadow: 3px 3px 8px rgb(116, 113, 113);
-    width: 200px;
-    border-radius: 15px;
-    line-height: 25px;
-    margin: 20px;
-}
-.boxes-cont{
-    margin-bottom: 100px;
-}
-.offer h2{
-    display: inline;
-    font-family: monospace;
-    color: black;
-    font-size: 30px;
-    text-decoration: underline double black;
-}
-.offer{
-    margin-bottom: 300px;
-    font-style: italic;
-}
-.tech-head{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 300;
-    font-style: italic;
-    margin-bottom: 100px;
-}
-.id-cont{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    font-style: italic;
-}
-.ids{
-    border: 2px ,solid, white;
-    box-shadow: 2px 5px 8px rgb(121, 119, 119);
-    width: 250px;
-}
-.ids h3{
-    text-align: center;
-    line-height: 35px;
-}
-main{
-    margin-bottom: 200px;
-}
-/*Main Styling Ends Here */
 
-
-/*Footer Styling Starts Here */
-footer{
-    color: white;
-    font-weight: 500;
-    font-style: italic;
-    font-family: Palatino Linotype;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: black;
-    border: 2px, solid, black;
-    width: 100vw;
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
 }
-.containers{
-    padding-top: 50px;
-    line-height: 40px;
-    display: flex;
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.hero {
+  background: var(--primary-color);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.btn {
+  background: white;
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+.features {
+  padding: 4rem 0;
+  background: var(--gray);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: #f1f1f1;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
     flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
-.last{
-    margin-top: 130px;
-    display: flex;
-    flex-direction: column;
-}
-/*Footer Styling Ends Here */
-@media (max-width:900px){
-    .offer-img{
-        width: 200px;
-        height: 200px;
-    }
-    .ids{
-        width: 200px;
-        height: 200px;
-    }
-    .ids img{
-        width: 200px;
-        height: 200px;
-    }
-    .main-txt{
-        font-size: 20px;
-    }
-    .nav-items{
-        font-size: 13px;
-    }
-}
-@media (max-width : 300px){
-    body{
-        line-height: 50px;
-    }
-    .ids img{
-        width: 240px;
-    }
-    .ids{
-        width: 340px;
-        margin-bottom: 300px;
-    }
-}
-</style>
+
+    </style>
 <body>
-    <nav>
-        <ul class="nav-cont" id="nav-cont">
-            <a href="#"><li class="nav-items" id="nav-item-1">Home</li></a>
-            <li class="nav-items" id="nav-item-2">Action</li>
-            <li class="nav-items" id="nav-item-3">Login</li>
-            <li class="nav-items" id="nav-item-4">Premium</li>
-            <li class="nav-items" id="nav-item-5">More</li>
+  <header>
+    <div class="container nav">
+      <div class="logo">CleanUI</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
-    <aside class="hidden" id="aside">
-        <ul class="aside-cont " id="aside-cont">
-            <li class="aside-items" id="aside-item-1">
-                <h3 style="font-style: italic;">Link To More <a href="#">Teachers</a></h3>
-                <h3 style="font-style: italic;">Apply As a <a href="#">Teacher</a></h3>
-            </li>
-        </ul>
-    </aside>
-    <main>
-        <h2 class="main-txt" id="main-txt">We offer you 4 sevices</h2>
-        <div class="ad-cont hidden" id="ad-cont-1">
-            <img id="ad-1" class="ads" src="https://up.yimg.com/ib/th?id=OIP.vtpvjhe9No00uexi0QCIQwHaEK&pid=Api&rs=1&c=1&qlt=95&w=186&h=104" alt="Product On Ad" width="150px" height="150px">
-        </div>
-        <div class="boxes-cont" id="boxex-cont">
-        <div class="box-cont" id="box-cont-1">
-            <div class="box" id="box-1">
-                <h4>Ready To  Marketplace</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, amet.</p>
-            </div>
-            <div class="box" id="box-2">
-                <h4>Its All About CYBERSECURITY</h4>
-                <p>Lorem, ipsum dolor sit amet consecteturaliquam alias laborum quidem?</p>
-            </div>
-        </div>
-            <div class="box-cont" id="box-cont-2">
+      </nav>
+    </div>
+  </header>
 
-            
-            <div class="box" id="box-3">
-                <h4>Need More Remote Jobs?</h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perspiciatis eum. Nemo, expedita.
-            </div>
-            <div class="box" id="box-4">
-                <h4>Buy some Crypto tokens</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem amet maxime ipsam.</p>
-            </div>
-        </div>
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Build Clean Interfaces</h1>
+      <p>Design and develop responsive, minimal, and beautiful websites with ease.</p>
+      <a href="#" class="btn">Get Started</a>
     </div>
-    <div class="offer" id="offer">
-        <img src="https://up.yimg.com/ib/th?id=OIP.uvcgWh0QWGclQZtoqgsTrAHaG_&pid=Api&rs=1&c=1&qlt=95&w=110&h=104" width="500px" height="500px" alt="Product On Sale">
-        <a href="#"><h2>Its On Offer!!!</h2></a>
+  </section>
+
+  <section class="features">
+    <div class="container grid">
+      <div class="card">
+        <h2>Responsive</h2>
+        <p>Looks great on all devices, from mobile to desktop.</p>
+      </div>
+      <div class="card">
+        <h2>Modern</h2>
+        <p>Clean layout using modern web design trends.</p>
+      </div>
+      <div class="card">
+        <h2>Lightweight</h2>
+        <p>No JavaScript — just fast, pure HTML and CSS.</p>
+      </div>
     </div>
-    <div class="teachers" id="teachers">
-        <h3 class="tech-head" id="tech-head">We Provide 4 best teachers for cybersecurity and Full Stack Development:-</h3>
-    <div class="id-cont" id="id-cont-1">
-        <div class="ids" id="id-1">
-            <img src="https://up.yimg.com/ib/th?id=OIP.2Ecc2kJaDoiau98cs8wETgHaE8&pid=Api&rs=1&c=1&qlt=95&w=152&h=101" alt="Teachers pictures" width="250px" height="200px">
-            <h3>Teacher Name: Aliya Nilon</h3>
-            <h3>Graduation: M.Phill</h3>
-            <h3>Expert In: Full Stack Development</h3>
-            <h3>Fees: Rs. 100,000</h3>
-        </div>
-        <div class="ids" id="id-2">
-            <img src="https://up.yimg.com/ib/th?id=OIP.Oewl_MRPuG9b7_lwLfMhawHaFB&pid=Api&rs=1&c=1&qlt=95&w=169&h=114" alt="Teachers pictures" width="250px" height="200px">
-            <h3>Teacher Name: Marry Curie</h3>
-            <h3>Graduation: M.Phill</h3>
-            <h3>Expert In: Full Stack Development</h3>
-            <h3>Fees: Rs. 100,000</h3>
-        </div>
-        <div class="ids" id="id-3">
-            <img src="https://up.yimg.com/ib/th?id=OIP.LHpNX_7WYLR7oalwl5HY1wHaHa&pid=Api&rs=1&c=1&qlt=95&w=114&h=114" alt="Teachers pictures" width="250px" height="200px">
-            <h3>Teacher Name: Julien Alien</h3>
-            <h3>Graduation: M.Phill</h3>
-            <h3>Expert In: Full Stack Development</h3>
-            <h3>Fees: Rs. 100,000</h3>
-        </div>
-        <div class="ids" id="id-4">
-            <img src="https://up.yimg.com/ib/th?id=OIP.7uuSywG8vBjfkaDF-MCktgHaE8&pid=Api&rs=1&c=1&qlt=95&w=145&h=97" alt="Teachers pictures" width="250px" height="200px">
-            <h3>Teacher Name: Bro Jhons</h3>
-            <h3>Graduation: M.Phill</h3>
-            <h3>Expert In: Full Stack Development</h3>
-            <h3>Fees: Rs. 100,000</h3>
-        </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CleanUI. All rights reserved.</p>
     </div>
-    </div>
-    </main>
-    <script>
-        let ad = document.getElementById('ad-cont-1')
-document.addEventListener('DOMContentLoaded', function(){
-    setTimeout(()=>{
-        ad.classList.remove('hidden')
-    }, 10000)
-    setTimeout(()=>{
-        ad.classList.add('hidden')
-    }, 20000)
-})
-let set = document.getElementById('nav-item-5')
-set.addEventListener('click', function(){
-    let aside = document.getElementById('aside')
-    aside.classList.toggle('hidden')
-})
-    </script>
+  </footer>
 </body>
 </html>
+
